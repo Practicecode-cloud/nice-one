@@ -1,0 +1,18 @@
+{
+  "name": "Hotel Management System",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [5000, 5500],
+  "portsAttributes": {
+    "5000": {
+      "label": "API (Node/Express)",
+      "visibility": "public",
+      "onAutoForward": "notify"
+    },
+    "5500": {
+      "label": "Frontend (Live Server)",
+      "visibility": "public",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "cd Api && npm install"
+}
